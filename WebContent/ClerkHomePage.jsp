@@ -20,8 +20,8 @@
    <marquee behavior="scroll" direction="left">HOME PAGE</marquee>
   </div>
   <div class="bottomleft">
-    <a href="C:/Users/USER/git/SOEN-6471/6471TicketBooking/WebContent/UserLogin.jsp">CAR CATALOG PAGE</a>
-    <a href="C:/Users/USER/git/SOEN-6471/6471TicketBooking/WebContent/AdminLogin.jsp">MANAGE CLIENT RECORDS</a>
+    <a href="C:/Users/USER/git/repository/CarRentalServices/WebContent/CarCatalog.jsp">CAR CATALOG PAGE</a>
+    <a href="C:/Users/USER/git/repository/CarRentalServices/WebContent/ManageClientRecords.jsp">MANAGE CLIENT RECORDS</a>
   </div>
 
 

@@ -22,7 +22,7 @@ src="../script/validate.js"></script>
    <marquee behavior="scroll" direction="left">HOME PAGE</marquee>
   </div>
   <div class="bottomleft">
-    <a href="C:/Users/USER/git/SOEN-6471/6471TicketBooking/WebContent/UserLogin.jsp">CLERK LOGIN</a>
+    
     <a href="C:/Users/USER/git/SOEN-6471/6471TicketBooking/WebContent/AdminLogin.jsp">ADMIN LOGIN</a>
   </div>
 </div>
