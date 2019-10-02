@@ -45,17 +45,62 @@
                 <th>LicensePlate</th>
                 
             </tr>
-            <c:forEach var="user" items="${listcar.rows}">
+           
                 <tr>
-                    <td><c:out value="${user.Type}" /></td>
-                    <td><c:out value="${user.Make}" /></td>
-                    <td><c:out value="${user.Year}" /></td>
-                    <td><c:out value="${user.Model}" /></td>
-                    <td><c:out value="${user.Color}" /></td>
-                    <td><c:out value="${user.LicensePlate}" /></td>
+                    <td>SUV</td>
+                    <td>VOLVO></td>
+                    <td>2015</td>
+                    <td>X90</td>
+                    <td>WHITE</td>
+                    <td>A1C 2B3</td>
                     
                 </tr>
-            </c:forEach>
+           <tr>
+                    <td>HATCHBACK</td>
+                    <td>FORD</td>
+                    <td>2016</td>
+                    <td>FIGO</td>
+                    <td>BLACK</td>
+                    <td>V5F 3F4</td>
+                    
+                </tr>
+                <tr>
+                    <td>SEDAN</td>
+                    <td>VOLKSWAGON</td>
+                    <td>2019</td>
+                    <td>PASSAT</td>
+                    <td>WHITE</td>
+                    <td>R5T 6Y7</td>
+                    
+                </tr>
+                
+                 <tr>
+                    <td>SEDAN</td>
+                    <td>HONDA</td>
+                    <td>2015</td>
+                    <td>CITY</td>
+                    <td>GREY</td>
+                    <td>Y7U 4H6</td>
+                    
+                </tr>
+                <tr>
+                    <td>HATCHBACK</td>
+                    <td>KIA</td>
+                    <td>2017</td>
+                    <td>CEED</td>
+                    <td>WHITE</td>
+                    <td>N6T 5H8</td>
+                    
+                </tr>
+                <tr>
+                    <td>SUV</td>
+                    <td>MAHINDRA></td>
+                    <td>2010</td>
+                    <td>BOLERO</td>
+                    <td>WHITE</td>
+                    <td>V4V 8I8</td>
+                    
+                </tr>
         </table>
     </div>
 
