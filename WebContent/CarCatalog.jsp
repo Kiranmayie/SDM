@@ -43,7 +43,7 @@
                 <th>Model</th>
                 <th>Color</th>
                 <th>LicensePlate</th>
-                <th>Status</th>
+                
             </tr>
             <c:forEach var="user" items="${listcar.rows}">
                 <tr>
@@ -53,7 +53,7 @@
                     <td><c:out value="${user.Model}" /></td>
                     <td><c:out value="${user.Color}" /></td>
                     <td><c:out value="${user.LicensePlate}" /></td>
-                    <td><c:out value="${user.Status}" /></td>
+                    
                 </tr>
             </c:forEach>
         </table>
