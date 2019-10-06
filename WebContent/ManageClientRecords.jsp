@@ -5,19 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Manage Client Records</title>
-      <style>
-        .form-group label {width: 40%;}
-        .form-horizontal {width: 50%; margin: 20px auto; text-align: center; border: 1px solid #ccc; border-radius: 30px; padding: 20px 0;}
-        .form-group .form-control {width: 40%; display: inline-block;}
-        p {color:red; font-size:200%;}
-        h1 {color:green;}
-        h2 {color:white;}
-        label {color:orange;}
-        body {text-align: center; background-image: url("background.jpg");}
-    </style>
-<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+   
 
-    </head>
+
     <!-- Scripts -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

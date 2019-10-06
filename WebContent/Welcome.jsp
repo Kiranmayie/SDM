@@ -6,21 +6,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>CAR RENTAL BOOKING MANAGEMENT SYSTEM</title>
-<link rel="stylesheet" href="../css/style.css" type="text/css"></link>
-<<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    </head>
-    <style>
-        .form-group label {width: 40%;}
-        .form-horizontal {width: 50%; margin: 20px auto; text-align: center; border: 1px solid #ccc; border-radius: 30px; padding: 20px 0;}
-        .form-group .form-control {width: 40%; display: inline-block;}
-        p {color:red; font-size:200%;}
-        h1 {color:green;}
-        h2 {color:white;}
-        label {color:orange;}
-        body {text-align: center; background-image: url("background.jpg");}
-    </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
 <script language="JavaScript" type="text/JavaScript" 
 src="../script/validate.js"></script>
 </head>
@@ -35,7 +31,7 @@ src="../script/validate.js"></script>
          <div class="col-md-6 col-sm-12">
             <div class="login-form">
     
-    <a href="C:/Users/USER/git/SOEN-6471/6471TicketBooking/WebContent/AdminLogin.jsp">ADMIN LOGIN</a>
+    
   </div>
 </div>
 <table>
