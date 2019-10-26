@@ -24,7 +24,7 @@ src="../script/validate.js"></script>
 <div class="sidenav">
          <div class="login-main-text">
             <h2>Car Rental Booking<br> Management System</h2>
-            <p>Clerk Login from here to access.</p>
+            
          </div>
       </div>
       <div class="main">
@@ -34,18 +34,23 @@ src="../script/validate.js"></script>
     
   </div>
 </div>
-<table>
-  <form action="ClerkLoginServlet" method="post">
-  
-  <tr><td><div style="color: #FF0000;"> <span class="error">${message}</span></div><br></td></tr>
-  <tr><td><label>Clerk Name</label></td>
-  <td><input type="text"  name="name" /></td></tr>
-  <tr><td><label>Email Address</label></td>
-  <td><input type="email" name="email" /></td></tr>
- <tr><td><input type="submit" value="Login"></td></tr>
- 
- </form>
- </table>
+<div class="middle">
+    <h1>CRBMS Home Page</h1>
+    <hr>
+   <marquee behavior="scroll" direction="left">HOME PAGE</marquee>
+  </div>
+  <div class="bottomleft">
+    <a href="ClerkLogin.jsp">Clerk Login</a>
+    <br>
+    <br>
+    <a href="AdminLogin.jsp">Admin Login</a>
+    
+    <br>
+    <br>
+   
+    
+  </div>
+
 
 </body>
 </html>
