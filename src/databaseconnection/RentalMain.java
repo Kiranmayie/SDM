@@ -50,6 +50,44 @@ public class RentalMain {
 			return fname;
 		}
 		
+		
+		public String checkAdminLogin(AdminComponent admin) {
+			boolean row = false;
+			String fname = null;
+			try {
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/carrental", "root", "Kiran@28");
+
+				if (con != null) {
+					System.out.println("Connected");
+					preparedStmt = con.prepareStatement("SELECT * FROM tbladmin where adminName=? and adminEmail=?");
+					preparedStmt.setString(1, admin.getAdminName());
+					preparedStmt.setString(2, admin.getEmail());
+
+					ResultSet rs = preparedStmt.executeQuery();
+
+					while (rs.next()) {
+						row = true;
+						fname = rs.getString(2);
+
+					}
+
+				}
+			}
+
+			catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			return fname;
+		}
+		
+		
+		
 		public String addNewClient(ClientComponent client)
 		{
 			boolean row = false;

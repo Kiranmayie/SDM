@@ -2,19 +2,19 @@ package servlet;
 
 public class AdminComponent {
 
-		private String FirstName;
+		private String AdminName;
 		private String Email;
 		
 		
-		public String getFirstName() {
-			return FirstName;
+		public String getAdminName() {
+			return AdminName;
 		}
 		/**
 		 * @param userId the userId to set
 		 * @param ClerkID 
 		 */
-		public void setFirstName(String FirstName) {
-			this.FirstName = FirstName;
+		public void setAdminName(String AdminName) {
+			this.AdminName = AdminName;
 		}
 		/**
 		 * @return the email
