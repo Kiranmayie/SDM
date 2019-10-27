@@ -19,4 +19,6 @@ Clerk Email Address: 2809kiran@gmail.com
 
 P.S.
 And the commits in github are being merged when we push to master that is the reason why we have less commits
-commits by NANDINI are not visible despiting trying many times even in iteartion2. please consider this.
+commits by NANDINI are not visible despite trying many times even in iteartion2.
+since her commits are not appearing in git after time, we the group members committed her code too.
+please consider this while evaluating.
