@@ -16,3 +16,6 @@ Run the server on Welcome.jsp from the folder WebContent
 Clerk Login Credentials are
 Clerk Name: Kiran
 Clerk Email Address: 2809kiran@gmail.com
+
+P.S.
+And the commits in github are being merged when we push to master that is the reason why we have less commits
