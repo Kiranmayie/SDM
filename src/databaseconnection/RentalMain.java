@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import Components.AdminComponent;
 import Components.ClerkComponent;
 import Components.ClientComponent;
 public class RentalMain {

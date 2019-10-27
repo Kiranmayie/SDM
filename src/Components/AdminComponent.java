@@ -1,4 +1,4 @@
-package servlet;
+package Components;
 
 public class AdminComponent {
 
