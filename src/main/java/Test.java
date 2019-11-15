@@ -13,7 +13,7 @@ public class Test {
 		
 		CarCatalogueDAO carCatalogueDAO = applicationContext.getBean(CarCatalogueDAO.class);
 		
-		//carCatalogueDAO.add(new CarCatalogue(4,"SUV","ford","Tarus","2019","White","E54 RGB","0"));
+		carCatalogueDAO.add(new CarCatalogue(5,"SUV","ford","Tarus","2019","White","E54 RG7","0"));
 		
 		
 		CarCatalogue carCatalogue = carCatalogueDAO.findById(1);

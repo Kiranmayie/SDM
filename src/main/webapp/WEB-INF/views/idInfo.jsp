@@ -37,7 +37,8 @@
 			<c:forEach var="carItem" items="${list}">
 				<tr>
 					<td><c:out value="${carItem.carId}"></c:out></td>
- 					<td><c:out value="${carItem.type}"></c:out></td>
+					<td><a href = "<c:url value = "/jsp/index.htm"/>"><c:out value="${carItem.carId}"></c:out></a></td>
+					<td><c:out value="${carItem.type}"></c:out></td>
 					<td><c:out value="${carItem.make}"></c:out></td>
 					<td><c:out value="${carItem.year}"></c:out></td>
 					<td><c:out value="${carItem.color}"></c:out></td>

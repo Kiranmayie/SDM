@@ -1,5 +1,8 @@
 package com.concordia.app.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Admin {
 	
 	private int adminID;

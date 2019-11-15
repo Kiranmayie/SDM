@@ -1,8 +1,11 @@
 package com.concordia.app.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class CarCatalogue {
-	
-	private int CarID;
+
+	private int carId;
 
 	private String type;
 
@@ -15,38 +18,38 @@ public class CarCatalogue {
 	private String color;
 
 	private String licenceNum;
-	
-	private String Status;
+
+	private String status;
 
 	public CarCatalogue() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public CarCatalogue(int carID, String type, String make, String model, String year, String color, String licenceNum,
+	public CarCatalogue(int carId, String type, String make, String model, String year, String color, String licenceNum,
 			String status) {
-		super();
-		this.CarID = carID;
+		// super();
+		this.carId = carId;
 		this.type = type;
 		this.make = make;
 		this.model = model;
 		this.year = year;
 		this.color = color;
 		this.licenceNum = licenceNum;
-		Status = status;
+		this.status = status;
 	}
 
 	@Override
 	public String toString() {
-		return "CarCatalogue [CarID=" + CarID + ", type=" + type + ", make=" + make + ", model=" + model + ", year="
-				+ year + ", color=" + color + ", licenceNum=" + licenceNum + ", Status=" + Status + "]";
+		return "CarCatalogue [CarID=" + carId + ", type=" + type + ", make=" + make + ", model=" + model + ", year="
+				+ year + ", color=" + color + ", licenceNum=" + licenceNum + ", Status=" + status + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + CarID;
-		result = prime * result + ((Status == null) ? 0 : Status.hashCode());
+		result = prime * result + carId;
+		result = prime * result + ((status == null) ? 0 : status.hashCode());
 		result = prime * result + ((color == null) ? 0 : color.hashCode());
 		result = prime * result + ((licenceNum == null) ? 0 : licenceNum.hashCode());
 		result = prime * result + ((make == null) ? 0 : make.hashCode());
@@ -65,12 +68,12 @@ public class CarCatalogue {
 		if (getClass() != obj.getClass())
 			return false;
 		CarCatalogue other = (CarCatalogue) obj;
-		if (CarID != other.CarID)
+		if (carId != other.carId)
 			return false;
-		if (Status == null) {
-			if (other.Status != null)
+		if (status == null) {
+			if (other.status != null)
 				return false;
-		} else if (!Status.equals(other.Status))
+		} else if (!status.equals(other.status))
 			return false;
 		if (color == null) {
 			if (other.color != null)
@@ -105,12 +108,12 @@ public class CarCatalogue {
 		return true;
 	}
 
-	public int getCarID() {
-		return CarID;
+	public int getCarId() {
+		return carId;
 	}
 
-	public void setCarID(int carID) {
-		CarID = carID;
+	public void setCarId(int carId) {
+		this.carId = carId;
 	}
 
 	public String getType() {
@@ -162,15 +165,11 @@ public class CarCatalogue {
 	}
 
 	public String getStatus() {
-		return Status;
+		return status;
 	}
 
 	public void setStatus(String status) {
-		Status = status;
+		this.status = status;
 	}
 
-	 
-	
-
-	
 }
