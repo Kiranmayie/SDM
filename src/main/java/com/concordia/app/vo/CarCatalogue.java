@@ -25,7 +25,7 @@ public class CarCatalogue {
 	public CarCatalogue(int carID, String type, String make, String model, String year, String color, String licenceNum,
 			String status) {
 		super();
-		CarID = carID;
+		this.CarID = carID;
 		this.type = type;
 		this.make = make;
 		this.model = model;
@@ -168,9 +168,8 @@ public class CarCatalogue {
 	public void setStatus(String status) {
 		Status = status;
 	}
-	
 
-	
+	 
 	
 
 	
