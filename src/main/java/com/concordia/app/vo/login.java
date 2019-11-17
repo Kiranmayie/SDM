@@ -2,7 +2,7 @@ package com.concordia.app.vo;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class login {
 	
 	private int userId;
