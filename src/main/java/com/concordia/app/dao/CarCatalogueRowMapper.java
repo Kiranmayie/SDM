@@ -16,11 +16,10 @@ public class CarCatalogueRowMapper implements RowMapper<CarCatalogue> {
 		// TODO Auto-generated method stub
 		CarCatalogue carCatalogue = new CarCatalogue();
 		
-		carCatalogue.setCarID(resultSet.getInt("carId"));
+		carCatalogue.setCarId(resultSet.getInt("carId"));
 		carCatalogue.setType(resultSet.getString("cType"));
 		carCatalogue.setMake(resultSet.getString("cMake"));
 		carCatalogue.setModel(resultSet.getString("cModel"));
-
 		carCatalogue.setYear(resultSet.getString("cYear"));
 		carCatalogue.setColor(resultSet.getString("cColor"));
 		carCatalogue.setLicenceNum(resultSet.getString("cLicencePl"));

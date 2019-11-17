@@ -21,11 +21,13 @@ public class CarCatalogueDAO implements ICarCatalogue {
 	
 	private String selectQuery = "select * from carrental.tblcar where carID=?";
 	
+	private String selectQuery1 = "select * from carrental.tblcar";
+	
 	@Override
 	public void add(CarCatalogue carCatalogue) {
 		// TODO Auto-generated method stub
 		
-		int noOfRows = jdbcTemplate.update(insertQuery,carCatalogue.getCarID(),carCatalogue.getType(),carCatalogue.getMake(),carCatalogue.getModel(),carCatalogue.getYear(),carCatalogue.getColor(),carCatalogue.getLicenceNum(),carCatalogue.getStatus());
+		int noOfRows = jdbcTemplate.update(insertQuery,carCatalogue.getCarId(),carCatalogue.getType(),carCatalogue.getMake(),carCatalogue.getModel(),carCatalogue.getYear(),carCatalogue.getColor(),carCatalogue.getLicenceNum(),carCatalogue.getStatus());
 		
 		if(noOfRows == 1) {
 			System.out.println("Record added succesfully");
@@ -42,7 +44,8 @@ public class CarCatalogueDAO implements ICarCatalogue {
 	@Override
 	public List<CarCatalogue> findCarCatalogue() {
 		// TODO Auto-generated method stub
-		return null;
+		List<CarCatalogue> carCatalogue1 = jdbcTemplate.query(selectQuery1, carCatalogueRowMapper);
+		return carCatalogue1;
 	}
 
 	@Override

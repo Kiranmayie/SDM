@@ -2,6 +2,9 @@ package com.concordia.app.vo;
 
 import java.sql.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class CarReturn {
 	String type;
 	String licensePlate;
