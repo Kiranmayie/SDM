@@ -15,10 +15,11 @@ public class ApplicationConfig {
 		
 		BasicDataSource basicDataSource = new BasicDataSource();
 		
-		basicDataSource.setUrl("jdbc:mysql://localhost:3306/carrental?autoReconnect=true&useSSL=false");
+		basicDataSource.setUrl("jdbc:mysql://127.0.0.1:3306/carrental?autoReconnect=true&useSSL=false");
+		//basicDataSource.setUrl("jdbc:mysql://127.0.0.1:3306/carrental?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=GMT");
 		basicDataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		basicDataSource.setUsername("root");
-		basicDataSource.setPassword("password");
+		basicDataSource.setPassword("root");
 		basicDataSource.setInitialSize(5) ;
 		basicDataSource.setMaxTotal(10) ;
 		
