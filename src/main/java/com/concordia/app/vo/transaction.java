@@ -12,6 +12,8 @@ public class transaction {
 	private String licenseNumber;
 	private String licensePlate;
 	private String status;
+	
+	
 	public transaction(int reservationId, Date startdate, Date duedate, String licenseNumber, String licensePlate,
 			String status) {
 		super();
