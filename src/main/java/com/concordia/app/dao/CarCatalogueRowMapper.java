@@ -21,6 +21,7 @@ public class CarCatalogueRowMapper implements RowMapper<CarCatalogue> {
 		carCatalogue.setMake(resultSet.getString("cMake"));
 		carCatalogue.setModel(resultSet.getString("cModel"));
 		carCatalogue.setYear(resultSet.getString("cYear"));
+		//System.out.println(resultSet.getString("cYear"));
 		carCatalogue.setColor(resultSet.getString("cColor"));
 		carCatalogue.setLicenceNum(resultSet.getString("cLicencePl"));
 		carCatalogue.setStatus(resultSet.getString("cStatus"));
