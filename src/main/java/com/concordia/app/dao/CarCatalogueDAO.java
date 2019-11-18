@@ -3,6 +3,7 @@ package com.concordia.app.dao;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -21,7 +22,7 @@ public class CarCatalogueDAO implements ICarCatalogue {
 	
 	private String selectQuery = "select * from carrental.tblcar where carID=?";
 	
-	private String selectQuery1 = "select * from carrental.tblcar";
+	private String selectQuery1 ="select * from carrental.tblcar";
 	
 	@Override
 	public void add(CarCatalogue carCatalogue) {
@@ -41,12 +42,9 @@ public class CarCatalogueDAO implements ICarCatalogue {
 		return carCatalogue;
 	}
 
-	@Override
-	public List<CarCatalogue> findCarCatalogue() {
-		// TODO Auto-generated method stub
-		List<CarCatalogue> carCatalogue1 = jdbcTemplate.query(selectQuery1, carCatalogueRowMapper);
-		return carCatalogue1;
-	}
+	
+	
+	
 
 	@Override
 	public void update(CarCatalogue carCatalogue) {
@@ -58,6 +56,15 @@ public class CarCatalogueDAO implements ICarCatalogue {
 	public void delete(int id) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public List<CarCatalogue> findCarCatalogue() {
+		
+		List<CarCatalogue> list = jdbcTemplate.query(selectQuery1,carCatalogueRowMapper );
+		
+		//System.out.println(list);
+		return list;
 	}
 	
 	

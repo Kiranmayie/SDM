@@ -6,12 +6,25 @@
 <head>
   </head>
   <body>
-    
-    <h4><a href="<c:url value="/system/catalog"/>">View Catalog</a></h4>
-    
-    <h4><a href="<c:url value="/client/dashboard"/>">Client Management System</a></h4>
-    <h4><a href="<c:url value="/system/catalog?from=reserve"/>">Reserve/Rental </a></h4>
-    <h4><a href="<c:url value="/cancelReturn/transactionSearch"/>">Cancel/Return</a></h4>
-      </body>
-      <a href="${contextpath }/root/">Logout</a>
-</html>
+     <td><a href="client">Add, Delete, Modify Clients</a>
+               </td>
+               <br>
+               <br>
+               <br>
+               <td><a href="carCatalogueSearch">View Car Catalog</a>
+               </td>
+               <br>
+               <br>
+               <br>
+                <td><a href="handleReservation">Handle Reservation</a>
+                </td>
+               <br>
+               <br>
+               <br>
+               <td><a href="handleRental">Handle Rental</a>
+               </td>
+               </body>
+               
+               
+               
+           </html>

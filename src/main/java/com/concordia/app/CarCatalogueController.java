@@ -1,4 +1,4 @@
-package com.concordia.app.controller;
+package com.concordia.app;
 
 import java.util.List;
 
