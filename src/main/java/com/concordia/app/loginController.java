@@ -32,18 +32,20 @@ public class loginController {
 	    mav.addObject("login", new login());
 	    return mav;
 	  }
-	  @RequestMapping(value = "/loginProcess", method = {RequestMethod.POST,RequestMethod.GET})
-	  public ModelAndView loginProcess(HttpServletRequest request, HttpServletResponse response) {
-		  String userName=(String) request.getAttribute("userName");
-				  System.out.println(userName);
+	  @RequestMapping(value = "/loginProcess", method = RequestMethod.POST)
+	  public ModelAndView loginProcess(@RequestParam("userName") String us, @RequestParam("Password") String password) {
+		  
+//		  String userName=(String) request.getAttribute("userName");
+				  System.out.println(us);
 	    ModelAndView mav = null;
-	    login user = loginDAO.loginUser(userName);
-	    System.out.println(userName);
+	    login user = loginDAO.loginUser(us);
+	    System.out.println(user);
+	    System.out.println(us);
 	    if (null != user) {
-	    mav = new ModelAndView("CarView");
+	    mav = new ModelAndView("clientdashboard");
 	    mav.addObject("userName", user.getUserName());
 	    } else {
-	    mav = new ModelAndView("clientdashboard");
+	    mav = new ModelAndView("CarView");
 	    mav.addObject("message", "Username or Password is wrong!!");
 	    }
 	    return mav;

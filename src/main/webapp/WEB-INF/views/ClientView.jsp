@@ -7,20 +7,36 @@
 <title>Insert title here</title>
 </head>
 <body>
+<table border="1">
 
-		
-<h2 align=center>Client Record</h2>
-		<table align=center>
-		<tr><td>ClientDL</td><td>expDate</td><td>phoneNumber</td><td>firstName</td><td>lastName</td></tr>
-		<tr>
+	<th>ClientDL</th>
+	<th>ExpiryDate</th>
+	<th>PhoneNumber</th>
+	<th>FirstName</th>
+	<th>LastName</th>
+	
+
+<tr>
 		<td>${ client.clientId }</td>
 		<td>${ client.clientDL }</td>
 		<td>${client.expDate}</td>
 		<td>${client.phoneNumber}</td>
 		<td>${client.firstName}</td>
 		<td>${client.lastName}</td>
-		</tr>
 		
+<c:forEach var="carItem" items="${list}">
+<tr>
+<td><c:out value="${carItem.clientId}"></c:out></td>
+<td><c:out value="${carItem.clientDL}"></c:out></td>
+<td><c:out value="${carItem.expDate}"></c:out></td>
+<td><c:out value="${carItem.phoneNumber}"></c:out></td>
+<td><c:out value="${carItem.firstName}"></c:out></td>
+<td><c:out value="${carItem.lastName}"></c:out></td>
+
+</tr>
+</c:forEach>
+<%-- <td>${carCatalogue.Status}</td> --%>
+</tr>
 		
 		</table>
 		
