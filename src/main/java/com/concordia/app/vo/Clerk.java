@@ -9,6 +9,8 @@ public class Clerk {
 	private String clerkName;
 	private String clerkEmail;
 	private String clearkPhoneNum;
+	
+	
 	public int getClerkId() {
 		return clerkId;
 	}

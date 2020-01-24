@@ -19,10 +19,11 @@ public class ClientRowMapper implements RowMapper<Client>{
 		
 		client.setClientDL(rs.getString("clientDL"));
 		client.setExpDate(rs.getDate("expDate"));
-		client.setphoneNumber(rs.getString("phoneNumber"));
+		client.setPhoneNumber(rs.getString("phoneNumber"));
 		client.setFirstName(rs.getString("firstName"));
 		client.setLastName(rs.getString("lastName"));
-		return null;
+		client.setFlag(rs.getBoolean("flag"));
+		return client;
 	}
 	
 	

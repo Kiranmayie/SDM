@@ -20,14 +20,17 @@ public class CarCatalogue {
 	private String licenceNum;
 
 	private String status;
+	
+	private boolean flag;
 
 	public CarCatalogue() {
+		
 		// TODO Auto-generated constructor stub
 	}
 
 	public CarCatalogue(int carId, String type, String make, String model, String year, String color, String licenceNum,
-			String status) {
-		// super();
+			String status, boolean flag) {
+		super();
 		this.carId = carId;
 		this.type = type;
 		this.make = make;
@@ -36,12 +39,14 @@ public class CarCatalogue {
 		this.color = color;
 		this.licenceNum = licenceNum;
 		this.status = status;
+		this.flag = flag;
 	}
 
 	@Override
 	public String toString() {
-		return "CarCatalogue [CarID=" + carId + ", type=" + type + ", make=" + make + ", model=" + model + ", year="
-				+ year + ", color=" + color + ", licenceNum=" + licenceNum + ", Status=" + status + "]";
+		return "CarCatalogue [carId=" + carId + ", type=" + type + ", make=" + make + ", model=" + model + ", year="
+				+ year + ", color=" + color + ", licenceNum=" + licenceNum + ", status=" + status + ", flag=" + flag
+				+ "]";
 	}
 
 	@Override
@@ -49,11 +54,12 @@ public class CarCatalogue {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + carId;
-		result = prime * result + ((status == null) ? 0 : status.hashCode());
 		result = prime * result + ((color == null) ? 0 : color.hashCode());
+		result = prime * result + (flag ? 1231 : 1237);
 		result = prime * result + ((licenceNum == null) ? 0 : licenceNum.hashCode());
 		result = prime * result + ((make == null) ? 0 : make.hashCode());
 		result = prime * result + ((model == null) ? 0 : model.hashCode());
+		result = prime * result + ((status == null) ? 0 : status.hashCode());
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		result = prime * result + ((year == null) ? 0 : year.hashCode());
 		return result;
@@ -70,15 +76,12 @@ public class CarCatalogue {
 		CarCatalogue other = (CarCatalogue) obj;
 		if (carId != other.carId)
 			return false;
-		if (status == null) {
-			if (other.status != null)
-				return false;
-		} else if (!status.equals(other.status))
-			return false;
 		if (color == null) {
 			if (other.color != null)
 				return false;
 		} else if (!color.equals(other.color))
+			return false;
+		if (flag != other.flag)
 			return false;
 		if (licenceNum == null) {
 			if (other.licenceNum != null)
@@ -94,6 +97,11 @@ public class CarCatalogue {
 			if (other.model != null)
 				return false;
 		} else if (!model.equals(other.model))
+			return false;
+		if (status == null) {
+			if (other.status != null)
+				return false;
+		} else if (!status.equals(other.status))
 			return false;
 		if (type == null) {
 			if (other.type != null)
@@ -172,4 +180,15 @@ public class CarCatalogue {
 		this.status = status;
 	}
 
+	public boolean isFlag() {
+		return flag;
+	}
+
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+
+	
+	
+	
 }

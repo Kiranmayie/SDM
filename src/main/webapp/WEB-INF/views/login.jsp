@@ -11,7 +11,7 @@
 	Login Page
 </h1>
 
-<P>  The time on the server is ${serverTime}.</P>
+<P>  ClerkLogin</P>
 
 
 <form action="loginProcess" modelAttribute="login" method="post">

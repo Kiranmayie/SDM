@@ -6,17 +6,19 @@
 <head>
   </head>
   <body>
+  <h3>${us.userName} Welcome</h3>
      <td><a href="vehicle">Add, Delete, Modify Vehicles</a>
                </td>
                <br>
                <br>
                <br>
-               <td><a href="transaction history">View Transaction history</a>
-               </td>
+               <td><a href="transactionhistory">View Transaction history</a>
+               </td> -->
                <br>
                <br>
                <br>
                
+               <td><a href="adminlogout/${us.userName}">Logout</a>
                </td>	
                </body>
                

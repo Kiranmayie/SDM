@@ -4,7 +4,7 @@
     </head>
     <body>
         <h3>Welcome, Enter The Vehicle Details</h3>
-      <form action="addvehicleprocess" modelAttribute="addCar" method="post">
+      <form action="addCarProcess" modelAttribute="addCar" method="post">
                 <table align="center">
                    
 		<tr>
@@ -35,7 +35,12 @@
 		</tr>
 		<tr>
 		    <td>License Plate:</td>
-		    <td><input type="text" name="licenseNum" size="30" required="required"/></td>
+		    <td><input type="text" name="licenseNum" value="ex: XCB468" pattern="[a-zA-Z]{3}[0-9]{3}" size="30" required="required"/></td>
+		</tr>
+		
+		<tr>
+		    <td>Status</td>
+		    <td><input type="text" name="status" size="30" required="required"/></td>
 		</tr>
 		<tr>
 		    <td colspan="2"><input type="submit" value="Submit" /></td>

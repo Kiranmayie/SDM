@@ -1,10 +1,14 @@
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Manage Vehicle Records</title>
+    <title>Transaction Historys</title>
 <table id="myTable" class="display table" width="100%" > 
         <thead>  
           <tr>  
@@ -28,7 +32,7 @@
 <td>${transaction.licensePlate}</td>
 <td>${transaction.status}</td>
 <td>${status}</td>
-<c:forEach var="transactionItem" items="${list}">
+<c:forEach var="transactionItem" items="${list1}">
 <tr>
 <td><c:out value="${transactionItem.reservationId}"></c:out></td>
 <td><c:out value="${transactionItem.startdate}"></c:out></td>
