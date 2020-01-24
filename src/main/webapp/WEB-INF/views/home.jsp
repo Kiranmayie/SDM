@@ -3,13 +3,16 @@
 <html>
 <head>
 	<title>Home</title>
+  
+ 
 </head>
 <body>
 
+<div>	
+	<h1 style="text-align:center; color:#8fd19e;">Welcome to Car Rental Services</h2>
 
-<h1>
-	Welcome to Car Rental Services  
-</h1>
+</div>
+
 
 <P>  The time on the server is ${serverTime}.</P>
 <table align="center">

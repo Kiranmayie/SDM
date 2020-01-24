@@ -6,7 +6,9 @@
 <head>
   </head>
   <body>
-     <td><a href="client">Add, Delete, Modify Clients</a>
+  <h3>${us.userName} Welcome</h3>
+ 
+     <td><a href="client/${us.userName}">Add, Delete, Modify Clients</a>
                </td>
                <br>
                <br>
@@ -22,7 +24,10 @@
                <br>
                <br>
                <td><a href="handleRental">Handle Rental</a>
-               </td>
+               </td>	
+               <br>
+               <br>
+               <td><a href="clerklogout/${us.userName}">Logout</a>
                </body>
                
                

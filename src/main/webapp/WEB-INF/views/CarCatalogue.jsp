@@ -15,8 +15,7 @@
             <tr>
             </tr>
             <tr>
-                <td><a href="clerklogin.jsp">ClerkLogin</a>
-                <td><a href="Adminlogin.jsp">AdminLogin</a>
+               
                 </td>
             </tr>
         </table>
